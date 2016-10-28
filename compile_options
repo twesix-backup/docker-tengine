@@ -2,6 +2,7 @@ yum install gcc gcc-c++ \
             bzip2 \
             make autoconf\
             perl \
+            wget \
 
 ./configure \
 \
@@ -21,20 +22,12 @@ yum install gcc gcc-c++ \
 --with-http_stub_status_module \
 \
 
-
-
---without-http_xslt_module \
-
-
---enable-mods-static=all \
-
-
 tools
 wget url/of/the/file
 default put the file downloaded in the current dir
 
 get tengine
-http://tengine.taobao.org/download/tengine.tar.gz
+http://tengine.taobao.org/download/tengine-2.1.2.tar.gz
 
 get jemalloc
 http://www.canonware.com/download/jemalloc/jemalloc-4.2.1.tar.bz2
