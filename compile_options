@@ -1,0 +1,52 @@
+yum install gcc gcc-c++ \
+            bzip2 \
+            make autoconf\
+            perl \
+
+./configure \
+\
+--with-jemalloc=/root/src/jemalloc-4.2.1 \
+--with-pcre=/root/src/pcre-8.39 \
+--with-zlib=/root/src/zlib-1.2.8 \
+--with-openssl=/root/src/openssl-1.0.2j \
+\
+--prefix=/root/tengine \
+--sbin-path=/root/tengine/tengine && \
+\
+--with-http_ssl_module \
+--with-http_v2_module \
+--with-http_spdy_module \
+\
+--with-http_sysguard_module \
+--with-http_stub_status_module \
+\
+
+
+
+--without-http_xslt_module \
+
+
+--enable-mods-static=all \
+
+
+tools
+wget url/of/the/file
+default put the file downloaded in the current dir
+
+get tengine
+http://tengine.taobao.org/download/tengine.tar.gz
+
+get jemalloc
+http://www.canonware.com/download/jemalloc/jemalloc-4.2.1.tar.bz2
+yum install bzip2
+tar -jxvf file.tar.bz2
+
+get pcre
+ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.39.tar.gz
+
+get openssl
+ftp://ftp.openssl.org/source/openssl-1.0.2j.tar.gz
+
+get zlib
+http://zlib.net/zlib-1.2.8.tar.gz
+
